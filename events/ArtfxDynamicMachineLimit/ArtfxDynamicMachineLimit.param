@@ -1,0 +1,18 @@
+[State]
+Type=Enum
+Items=Global Enabled;Opt-In;Disabled
+Label=State
+Default=Disabled
+Description=How this event plug-in should respond to events. If Global, all jobs and slaves will trigger the events for this plugin. If Opt-In, jobs and slaves can choose to trigger the events for this plugin. If Disabled, no events are triggered for this plugin.
+
+[Users]
+Type=MultiLineString
+Label=Users Allowed
+Default=
+Description=Wich users can use this event.
+
+[PercentWorkers]
+Type=Float
+Label=Percentage of workers wanted
+Default=0.0
+Description=Between 0.0 and 100.0.
